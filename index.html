@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spectator -- Agora</title>
+  <link rel="stylesheet" href="./assets/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="container-fluid banner">
+    <p class="banner-text">Spectator View</p>
+    <a style="color: rgb(255, 255, 255);fill: rgb(255, 255, 255);fill-rule: evenodd; position: absolute; right: 10px; top: 4px;"
+      class="Header-link " href="https://agora.io">
+    <img src="assets/agora-logo-rbg-blue75.png" alt="Agora IO" style="height:40px">      
+    </a>
+  </div>
+
+  <div class="container">
+    <form id="join-form" name="join-form">
+      <div class="button-group">
+          <button id="audience-join" type="button" class="btn btn-primary btn-sm" 
+            aria-haspopup="true" aria-expanded="false">
+            Join as audience
+          </button>
+
+        <button id="leave" type="button" class="btn btn-primary btn-sm" disabled>Leave</button>
+      </div>
+
+    </form>
+    <!-- Single button -->
+    <div class="row video-group">
+      <!-- div class="w-100"></div -->
+      <div class="col">
+        <div id="remote-playerlist"></div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <script src="./assets/jquery-3.4.1.min.js"></script>
+  <script src="./assets/bootstrap.bundle.min.js"></script>
+  <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+  <script src="./basicLive.js"></script>
+
+</body>
+
+</html>
